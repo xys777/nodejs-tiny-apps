@@ -9,6 +9,7 @@
 - 2.directory: default is the dir where you run it
 
 > You can just pass one parameter for directory, such: node httpDownloadServer /
+> Support big files(GB Level)
 
 ## http upload server
 > parameters: 
@@ -16,3 +17,4 @@
 - 2.directory: default is the dir where you run it
 
 > You can just pass one parameter for directory, such: node httpDownloadServer c:\tmp
+> Support big files(GB Level)
