@@ -12,9 +12,9 @@ const server = http.createServer((req, res) => {
   fs.stat(file, (e, stats) => {
     if (e) { res.end(e.message); return; }
 
-    if (stats.isFile()) {      
+    if (stats.isFile()) {
+      const reqid = reqs++;      
       console.log(`${reqid} - ${path.basename(file)} is downloading...`);
-      const reqid = reqs++;
       dy++;
       res.writeHead(200, {
         'Accept-Encoding': 'gzip',
